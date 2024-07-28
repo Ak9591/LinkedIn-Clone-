@@ -1,0 +1,46 @@
+.post {
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.post p {
+  margin-bottom: 10px;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.post video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.post-activity {
+  display: flex;
+  align-items: center;
+}
+
+.post-activity button {
+  background: none;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.post-activity button img {
+  width: 30px;
+  height: 30px;
+}
+
+.post-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

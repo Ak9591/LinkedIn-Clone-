@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cropper.css">
+    <link rel="icon" type="image/png" href="img/logo.png" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo"><img src="img/logo.png"></a>
+            <div class="search-box">
+                <img src="img/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="img/home.png"> <span>Home</span></a></li>
+                <li><a href="mynetwork.html"><img src="img/network.png"> <span>My Network</span></a></li>
+                <li><a href="job.html"><img src="img/jobs.png"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="img/message.png"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="img/notification.png"> <span>Notification</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="online">
+                <img src="img/user-1.jpg" class="nav-profile" id="profilePic" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!-- profile drop down -->
+        <div class="profile-menu-wrap" id="profilemenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="img/user-1.jpg" id="pic">
+                    <div>
+                        <h3>Akshata</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/setting.png">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav end -->
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="img/cover-pic.png" width="100%">
+                <div class="profile-container-inner">
+                    <div class="user-profile">
+                        <img src="img/user-1.jpg" id="profilePicContainer" class="profile-pic">
+                        <button class="edit" onclick="openImageUploader()"><img src="img/edit.png"></button>
+                    </div>
+                    <h1>Akshata</h1>
+                    <b>Intern at Broadridge</b>
+                    <p>Banglore, India; <a href="#">Contact info</a></p>
+                    <div class="connection">
+                        <a href="#">500+ Connection</a>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="img/connect.png">Connect</a>
+                        <a href="#"><img src="img/message.png">message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, natus!</p>
+                <a href="#" class="see-more">See more...</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="img/b.png">
+                    <div>
+                        <h3>Intern</h3>
+                        <b>Broadridge &middot; internship</b>
+                        <b>Feb 2024- Present &middot; 3 months</b>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="img/sp.png">
+                    <div>
+                        <h3>front-end intern</h3>
+                        <b>Space energy system &middot; internship</b>
+                        <b>nov 2023- feb 2024 &middot; 3 months</b>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="img/ramaiah.jpg">
+                    <div>
+                        <h3>M S Ramaiah University of Applied Science</h3>
+                        <b>B.tech, Computer Science and Engineering</b>
+                        <b>2021 - 2024</b>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Web design</a>
+                <a href="#" class="skills-btn">Python</a>
+                <a href="#" class="skills-btn">Java</a>
+                <a href="#" class="skills-btn">C Programming</a>
+                <a href="#" class="skills-btn">MYSQL</a>
+                <a href="#" class="skills-btn">PHP</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="lan-btn">English</a>
+                <a href="#" class="lan-btn">German</a>
+                <a href="#" class="lan-btn">Kannada</a>
+            </div>
+        </div>
+        <!-- profile side bar -->
+        <div class="profile-sidebar">
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 priciples of web design</p>
+                <div>
+                    <img src="img/user-1.jpg" id="sidebarpic">
+                    <img src="img/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-ppl-row">
+                    <img src="img/user-2.png">
+                    <div>
+                        <h2>Tony</h2>
+                        <p>SDE at google</p>
+                        <a href="#" class="connect-btn">Connect</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-ppl-row">
+                    <img src="img/user-4.png">
+                    <div>
+                        <h2>harry</h2>
+                        <p>SDE at microsoft</p>
+                        <a href="#" class="connect-btn">Connect</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-ppl-row">
+                    <img src="img/user-5.png">
+                    <div>
+                        <h2>Tom</h2>
+                        <p>SDE at amazon</p>
+                        <a href="#" class="connect-btn">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="javascript.js"></script>
+        <script src="cropper.js"></script>
+        <!-- Add this modal at the end of the body -->
+        <!-- The Modal -->
+        <div id="imageUploadModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closeImageUploader()">&times;</span>
+                <h2>Upload Profile Picture</h2>
+                <input type="file" id="imageInput" accept="image/*">
+                <button class="upload-btn" onclick="uploadImage()">Upload</button>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
